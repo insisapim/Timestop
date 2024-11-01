@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeStop Challenge - Detail</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="build.css">
+    <link rel="stylesheet" href="preloader.css">
+</head>
+<body class="min-h-screen overflow-auto">
+    <!-- Preloader Animation -->
+    <div id="preloader" class="preloader">
+        <div class="content">
+            <div class="preimage-holder">
+                <img class="preloader-image" src="buttercup.png" alt="buttercup">
+            </div>
+            <h1 class="powerpuff-title">Loading...</h1>
+        </div>
+    </div>
+
+    <!-- Navbar Section -->
+    <div class="Navbar w-[100%] h-20 bg-gray-400 flex justify-between items-center"> 
+        <div class="logo h-full flex items-start justify-start ml-4">
+            <a href="#" onclick="navigateWithPreloader('index.html')"><img src="clock logo.png" class="h-12 w-auto"></a>
+        </div>
+        <div class="flex justify-end text-purple-700 space-x-4 mr-4">
+            <a href="#" onclick="navigateWithPreloader('index.html')">Home</a>
+            <a href="#" onclick="navigateWithPreloader('source.html')">Source Code</a>
+            <a href="#" onclick="navigateWithPreloader('video.html')">Video</a>
+            <a href="#" onclick="navigateWithPreloader('detail.html')">Detail</a>
+            <a href="#" onclick="navigateWithPreloader('poster.html')">Poster</a>
+            <a href="#" onclick="navigateWithPreloader('aboutus.html')">About Us</a>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="bg-gray-800 w-full h-screen flex flex-col items-center justify-center text-white">
+        <div class=" w-[50%] max-w-[60ch] flex gap-[7%] justify-start space-x-10">
+            <div class="bg-purple-500 p-6 rounded-lg shadow-2xl">
+                <h2 class="text-[2rem] font-mono text-sub-header">Project TimeStop</h2>
+                <h1 class="text-[4rem] text-header"><b>Source Code</b></h1>
+                <p>นี่คือตัวอย่างของ code ที่ใช้ สามารถดูโค้ดทั้งหมดได้ที่ปุ่มด้านล่าง</p>
+                <br>
+                <button type="button" class="more-button bg-blue-400 p-2 rounded-lg"><a href="https://github.com/IT21Neo/Project-TimeStop" target="_blank">More Code</a></button>
+            </div>
+            <img class="aspect-square w-[20%]  rounded-3xl shadow-2xl h-48 object-cover" src="code.png" alt="source">
+        </div>
+    </div>
+    <script src="preloader.js"></script> <!-- เชื่อมต่อ preloader.js -->
+</body>
+</html>
+

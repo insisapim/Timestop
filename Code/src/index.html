@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeStop Challenge</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="build.css">
+    <link rel="stylesheet" href="preloader.css"> <!-- เชื่อมต่อ preloader.css -->
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script src="mqtt.js" defer></script>
+</head>
+<body class="overflow-y-auto">
+    <!-- Preloader Animation -->
+    <div id="preloader" class="preloader">
+        <div class="content">
+            <div class="preimage-holder">
+                <img class="preloader-image" src="pink girl.png" alt="Pink Girl">
+            </div>
+            <h1 class="powerpuff-title">Loading...</h1>
+        </div>
+    </div>
+
+    <!-- Navbar Section -->
+    <div class="Navbar w-[100%] h-20 bg-gray-400 flex justify-between items-center"> 
+        <div class="logo h-full flex items-start justify-start ml-4">
+            <a href="#" onclick="navigateWithPreloader('index.html')"><img src="clock logo.png" class="h-12 w-auto"></a>
+        </div>
+        <div class="flex justify-end text-purple-700 space-x-4 mr-4">
+            <a href="#" onclick="navigateWithPreloader('index.html')">Home</a>
+            <a href="#" onclick="navigateWithPreloader('source.html')">Source Code</a>
+            <a href="#" onclick="navigateWithPreloader('video.html')">Video</a>
+            <a href="#" onclick="navigateWithPreloader('detail.html')">Detail</a>
+            <a href="#" onclick="navigateWithPreloader('poster.html')">Poster</a>
+            <a href="#" onclick="navigateWithPreloader('aboutus.html')">About Us</a>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="bg-black w-full min-h-screen flex flex-col items-center justify-center text-white">
+        <h1 class="text-7xl font-bold mb-4">Welcome to</h1>
+        <h2 class="text-5xl font-semibold">TimeStop Challenge</h2>
+        <p class="mt-2 text-2xl">Have enjoy our minigame project.</p>
+    </div>
+    <div class="bg-black w-full min-h-screen flex flex-col items-center relative">
+        <img class="object-cover" src="https://cdn.dribbble.com/users/2172868/screenshots/7218286/fire.gif"> </img>
+        <h1 class="absolute number">0</h1>
+    </div>
+
+    <script src="preloader.js"></script> <!-- เชื่อมต่อ preloader.js -->
+</body>
+</html>

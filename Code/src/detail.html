@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeStop Challenge - Detail</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="build.css">
+    <link rel="stylesheet" href="preloader.css">
+</head>
+<body class="min-h-screen overflow-auto bg-black text-white">
+    <!-- Preloader Animation -->
+    <div id="preloader" class="preloader">
+        <div class="content">
+            <div class="preimage-holder">
+                <img class="preloader-image" src="buttercup.png" alt="buttercup">
+            </div>
+            <h1 class="powerpuff-title">Loading...</h1>
+        </div>
+    </div>
+
+    <!-- Navbar Section -->
+    <div class="Navbar w-[100%] h-20 bg-gray-400 flex justify-between items-center"> 
+        <div class="logo h-full flex items-start justify-start ml-4">
+            <a href="#" onclick="navigateWithPreloader('index.html')"><img src="clock logo.png" class="h-12 w-auto"></a>
+        </div>
+        <div class="flex justify-end text-purple-700 space-x-4 mr-4">
+            <a href="#" onclick="navigateWithPreloader('index.html')">Home</a>
+            <a href="#" onclick="navigateWithPreloader('source.html')">Source Code</a>
+            <a href="#" onclick="navigateWithPreloader('video.html')">Video</a>
+            <a href="#" onclick="navigateWithPreloader('detail.html')">Detail</a>
+            <a href="#" onclick="navigateWithPreloader('poster.html')">Poster</a>
+            <a href="#" onclick="navigateWithPreloader('aboutus.html')">About Us</a>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="flex flex-col items-center px-6 py-10">
+        <!-- Title and Description Section -->
+        <div class="text-center max-w-2xl mb-10">
+            <h1 class="text-5xl font-bold mb-4">Project TimeStop</h1>
+            <p class="text-lg font-semibold mb-6">
+                รายละเอียดโปรเจกต์
+            </p>
+            <h2 class="text-2xl font-semibold mb-4">
+                Timestop เป็นเกมที่จะกำหนดเวลาเอาไว้ และให้ผู้เล่นกดหยุดให้ตรงเวลาที่กำหนดไว้
+                เช่น กำหนดให้ผู้เล่นหยุดเวลาที่ 10 วินาที และเวลาจะทำการนับตั้งแต่ 1 วินาทีไปเรื่อยๆ
+                แต่ผู้เล่นจะไม่เห็นว่าเวลาเป็นเท่าไหร่ เมื่อผู้เล่นคาดว่าเวลาที่ตรงกับที่กำหนดไว้แล้ว
+                ให้กดปุ่มเพื่อหยุดเวลา หากเวลาที่ผู้เล่นกดหยุดกับเวลาที่กำหนดไว้ตรงกัน จะถือว่าผู้เล่นชนะ
+            </h2>
+        </div>
+
+        <!-- Equipment Section -->
+        <div class="text-center w-full max-w-4xl">
+            <h1 class="text-4xl font-bold mb-8">Equipment</h1>
+            <div class="flex justify-center gap-10">
+                <!-- Equipment Card 1 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center max-w-xs">
+                    <img class="h-32 mx-auto mb-4" src="Arduino UNO R4.jpg" alt="Arduino UNO R4 WiFi">
+                    <h6 class="text-xl font-semibold mb-2">Arduino UNO R4 WiFi</h6>
+                    <p>จำนวน 1 ตัว</p>
+                </div>
+
+                <!-- Equipment Card 2 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center max-w-xs">
+                    <img class="h-32 mx-auto mb-4" src="push button.jpg" alt="Push Button Switch">
+                    <h6 class="text-xl font-semibold mb-2">Push Button Switch</h6>
+                    <p>จำนวน 3 ตัว</p>
+                </div>
+
+                <!-- Equipment Card 3 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center max-w-xs w-full">
+                    <img class="h-32 mx-auto mb-4" src="LCD.jpg" alt="LCD Display">
+                    <h6 class="text-xl font-semibold mb-2">LCD Display</h6>
+                    <p>จำนวน 1 ตัว</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="preloader.js"></script>
+</body>
+</html>

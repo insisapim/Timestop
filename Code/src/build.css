@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Brush Script MT', cursive;
+    color: pink;
+    text-shadow: 5px 5px 8px purple;
+    
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+.pow{
+    background-image: url(https://c.tenor.com/TM0wRVBJ3tkAAAAC/powerpuff-powerpuff-girls.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.winstreak{
+    background-image: url(https://www.icegif.com/wp-content/uploads/2023/08/icegif-184.gif);
+    background-repeat: no-repeat;
+}
